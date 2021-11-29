@@ -44,8 +44,8 @@ const Dashboard = () => {
         <Flex flexDir='column' color='brandgray.200' w='50%' h='70%' alignSelf='center' margin='auto'>
           <Text fontWeight='200' fontSize={40}>Dashboard</Text>
           <Flex mt={55}>
-            <Grid w='100%' templateRows='repeat(2, 1fr)' templateColumns="repeat(5, 1fr)" rowGap={4} gap={4}>
-              <GridItem h={120} colSpan={1} bg="tomato">
+            <Grid w='100%' templateRows='repeat(2, 1fr)' templateColumns={["repeat(1, 1fr)", "repeat(1, 1fr)", "repeat(3, 1fr)", "repeat(5, 1fr)",]} rowGap={4} gap={4}>
+              <GridItem h={120} colSpan={[2, 2, 1, 1]} bg="tomato">
                 <DonationsStat amount={`#${data.ranking}`} title={'Ranking'} />
               </GridItem>
               <GridItem h={120} colSpan={2} bg="tomato">
