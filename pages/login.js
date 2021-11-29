@@ -23,7 +23,7 @@ const Login = () => {
                     <GoogleButton onClick={() => handleSocialLogin('google')} />
                 </Flex> */}
                 <Flex flexDir='column' w='50%' >
-                    <Text alignSelf='center' mt={3} fontSize={40} fontWeight='200'>Charity Tracker</Text>
+                    <Text color='brandgray.200' alignSelf='center' mt={3} fontSize={40} fontWeight='200'>Charity Tracker</Text>
                     <Flex w={[200, 300, 300, 400]} flexDir='column' margin='auto'>
                         <Text fontSize={50} fontWeight='700' color='brandgray.200'>Login</Text>
                         <Button color='brandgray.200'  onClick={() => handleSocialLogin('google')} _hover={{ border: '1px solid #474862', bg: 'brandgray.200', color: 'white' }} mt={10} h={55} borderRadius={100} bg='none' border='1px solid #C4C4C4'>
