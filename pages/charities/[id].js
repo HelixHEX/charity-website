@@ -14,6 +14,7 @@ import DonateModal from '../../components/donatemodal'
 import { useCharity } from '../../utils/api'
 import DonationsTable from '../../components/donationstable'
 import { BiArrowBack } from 'react-icons/bi'
+import MobileNav from '../../components/mobilenav'
 
 const CharityPage = () => {
     const { pathname, query, back } = useRouter()
@@ -30,6 +31,7 @@ const CharityPage = () => {
         <>
             <Flex w='100%' h='100vh'>
                 <Nav />
+                <MobileNav />
                 <Flex flexDir='column' color='brandgray.200' w='50%' h='70%' alignSelf='center' margin='auto'>
                     <Flex>
                         <Icon _hover={{ cursor: 'pointer', color: 'brandpurple' }} onClick={() => back()} alignSelf='center' w={25} h={25} as={BiArrowBack} />

@@ -4,6 +4,7 @@ import {
 } from '@chakra-ui/react'
 import { useSession } from 'next-auth/react'
 import DonationsTableUser from '../components/donationstableuser'
+import MobileNav from '../components/mobilenav'
 import Nav from '../components/nav'
 import { useDonations } from '../utils/api'
 
@@ -19,6 +20,7 @@ const Donations = () => {
         <>
             <Flex w='100%' h='100vh'>
                 <Nav />
+                <MobileNav />
                 <Flex flexDir='column' color='brandgray.200' w='50%' h='70%' alignSelf='center' margin='auto'>
                     <Text fontWeight='200' fontSize={40}>Donations</Text>
                     <Flex mt={55}>

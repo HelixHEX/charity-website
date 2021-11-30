@@ -10,6 +10,7 @@ import DonationsTableUser from '../../components/donationstableuser'
 import Nav from '../../components/nav'
 import { useDonations } from '../../utils/api'
 import { BiArrowBack } from 'react-icons/bi'
+import MobileNav from '../../components/mobilenav'
 
 const User = () => {
     const { query, back } = useRouter()
@@ -25,6 +26,7 @@ const User = () => {
         <>
             <Flex w='100%' h='100vh'>
                 <Nav />
+                <MobileNav />
                 <Flex flexDir='column' color='brandgray.200' w='50%' h='70%' alignSelf='center' margin='auto'>
                     <Flex>
                         <Icon _hover={{cursor: 'pointer', color: 'brandpurple'}} onClick={() => back()} alignSelf='center' w={25} h={25} as={BiArrowBack} />
