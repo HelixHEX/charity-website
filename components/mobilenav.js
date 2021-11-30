@@ -28,7 +28,7 @@ const MobileNav = () => {
     return (
         <>
             <Flex display={['flex', 'flex', 'none', 'none',]}>
-                <Icon pos='absolute' onClick={onOpen} mt={5} ml={10} w={35} h={35} as={HiMenu} />
+                <Icon color='black' pos='absolute' onClick={onOpen} mt={5} ml={10} w={35} h={35} as={HiMenu} />
                 <Drawer
                     size='full'
                     isOpen={isOpen}
