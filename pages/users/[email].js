@@ -27,7 +27,7 @@ const User = () => {
             <Flex w='100%' h='100vh'>
                 <Nav />
                 <MobileNav />
-                <Flex flexDir='column' color='brandgray.200' w='50%' h='70%' alignSelf='center' margin='auto'>
+                <Flex ml={[10, 10, '25%', '25%']} mr={[10, 10, 0, 0]} flexDir='column' color='brandgray.200' w={['100%', '100%', '50%', '50%']} h='70%' alignSelf='center' >
                     <Flex>
                         <Icon _hover={{cursor: 'pointer', color: 'brandpurple'}} onClick={() => back()} alignSelf='center' w={25} h={25} as={BiArrowBack} />
                         <Text fontWeight='200' fontSize={40} ml={3}>Donations</Text>

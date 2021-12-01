@@ -5,7 +5,9 @@ import { useEffect } from "react"
 
 const publicPages = ['/', '/login',]
 //test
+const config = {initialColorMode: 'dark'}
 const theme = extendTheme({
+  config,
   colors: {
     brandgray: {
       50: '#E5E7ED',

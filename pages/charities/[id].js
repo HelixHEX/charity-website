@@ -32,11 +32,11 @@ const CharityPage = () => {
             <Flex w='100%' h='100vh'>
                 <Nav />
                 <MobileNav />
-                <Flex flexDir='column' color='brandgray.200' w='50%' h='70%' alignSelf='center' margin='auto'>
+                <Flex ml={[10, 10, '25%', '25%']} mr={[10, 10, 0, 0]} flexDir='column' color='brandgray.200' w={['100%', '100%', '50%', '50%']} h='70%' alignSelf='center' >
                     <Flex>
                         <Icon _hover={{ cursor: 'pointer', color: 'brandpurple' }} onClick={() => back()} alignSelf='center' w={25} h={25} as={BiArrowBack} />
                         <Text ml={3} fontWeight='200' fontSize={40}>{data.charity.name}</Text>
-                        <Button onClick={onOpen} _hover={{ bg: 'brandgray.100' }} color='white' bg='brandblue.100' alignSelf='center' ml={3}>
+                        <Button mr={10} onClick={onOpen} _hover={{ bg: 'brandgray.100' }} color='white' bg='brandblue.100' alignSelf='center' ml={3}>
                             Donate
                         </Button>
                         <DonateModal charity={data.charity} onClose={onClose} isOpen={isOpen} />

@@ -15,7 +15,7 @@ const UsersTable = ({users}) => {
     const {push} = useRouter()
     return (
         <>
-            <Table mb={10} variant='simple'>
+            <Table variant='simple'>
                 <Thead>
                     <Tr>
                         <Th>Rank</Th>
