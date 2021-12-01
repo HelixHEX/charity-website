@@ -14,6 +14,7 @@ import Login from "./login"
 import DonationsStat from '../components/donationsstat'
 import { FaDollarSign, FaHandHoldingHeart, FaPlus } from 'react-icons/fa'
 import { useUser } from "../utils/api"
+import MobileNav from "../components/mobilenav"
 
 const Home = () => {
   const { data: session } = useSession()
@@ -41,6 +42,7 @@ const Dashboard = () => {
     <>
       <Flex w='100%' h='100vh'>
         <Nav />
+        <MobileNav />
         <Flex flexDir='column' color='brandgray.200' w='50%' h='70%' alignSelf='center' margin='auto'>
           <Text fontWeight='200' fontSize={40}>Dashboard</Text>
           <Flex mt={55}>
@@ -54,16 +56,6 @@ const Dashboard = () => {
               <GridItem colSpan={2} h={120} bg="brandpurple">
                 <DonationsStat amount={data.user.donatedCharities.length} title={'Total charities'} />
               </GridItem>
-              {/* <GridItem minH={120} h='auto' color='white' colSpan={5} rowSpan={2} bg="brandpurple">
-                  <Flex flexDir='column' p={3}>
-                    <Text fontWeight='300' fontSize={30}>Top Charities</Text>
-                    <Flex h={100} justifyContent='space-between' ml={4} flexDir='column' fontSize={20} fontWeight='300'>
-                      <Text>1. 1-877-carsforkids</Text>
-                      <Text>2. ST.Judes</Text>
-                      <Text>3. Random Charity</Text>
-                    </Flex>
-                  </Flex>
-                </GridItem> */}
             </Grid>
           </Flex>
         </Flex>

@@ -8,7 +8,7 @@ const DonationsStat = ({amount, title}) => {
         <>
             <Flex  flexDir='column' justifyContent='center' w='100%' h='100%' bg='white'>
                 <Flex alignSelf='center' flexDir='column'>
-                    <Text fontSize={50} >{amount}</Text>
+                    <Text alignSelf='center' fontSize={50} >{amount}</Text>
                     <Text fontSize={20} color='brandgray.100' mt={-3}>{title}</Text>
                 </Flex>
             </Flex>
