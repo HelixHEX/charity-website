@@ -30,7 +30,7 @@ const User = () => {
                 <Flex ml={[10, 10, '25%', '25%']} mr={[10, 10, 0, 0]} flexDir='column' color='brandgray.200' w={['100%', '100%', '50%', '50%']} h='70%' alignSelf='center' >
                     <Flex>
                         <Icon _hover={{cursor: 'pointer', color: 'brandpurple'}} onClick={() => back()} alignSelf='center' w={25} h={25} as={BiArrowBack} />
-                        <Text fontWeight='200' fontSize={40} ml={3}>ooga booga</Text>
+                        <Text fontWeight='200' fontSize={40} ml={3}>Donations</Text>
                     </Flex>
                     <Flex flexDir='column' mt={55}>
                         <Text fontSize={30} fontWeight='500'>{data.user.name}</Text>
