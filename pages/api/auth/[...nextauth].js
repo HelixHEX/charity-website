@@ -24,6 +24,7 @@ export default NextAuth({
     callbacks: {
         async jwt(token, account) {
             if (account?.accessToken) {
+                console.log(account)
                 token.accessToken = account.accessToken;
             }
             return token;

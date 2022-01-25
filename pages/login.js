@@ -61,7 +61,7 @@ const Login = () => {
                     </Flex>
                 </Flex>
             </Flex>
-            <Flex flexDir='column' w='100%' h='100vh' bg='brandpurple'>
+            <Flex flexDir='column' w='100%' h='100vh' bg='brandpurple' display={['flex', 'flex', 'none', 'none', 'none']}>
                 <Text alignSelf='center' color='white' mt={3} fontSize={40} fontWeight='200'>Charity Tracker</Text>
                 <Flex margin='auto' w={400} flexDir='column' alignSelf='center'>
                     <Text fontSize={50} fontWeight='700' color='white'>Login</Text>
